@@ -2,8 +2,6 @@ import datetime
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
-from alpha_vantage.timeseries import TimeSeries
-import matplotlib.pyplot as plt
 
 
 def real_time_price(stock_code):
@@ -19,17 +17,8 @@ def real_time_price(stock_code):
     return web_content
 
 
-def get_day_wise_data(stock_code):
-    ts = TimeSeries(key='OLM3WDSGIJEUF4AP', output_format='pandas')
-    data, meta_data = ts.get_daily(stock_code)
-    plt.plot(data['4. close'])
-    plt.title('Closing price of stock in previous trading day (weekday)')
-    plt.show()
-
-
 web_content = real_time_price('AAPL')
 print(web_content)
-get_day_wise_data('AAPL')
 
 for step in range(1, 101):
     price = []
