@@ -1,16 +1,6 @@
---> Install plotly from 
-	
-	conda install -c plotly plotly
-    or
-	
-	conda install -c plotly/label/test plotly
-    
-    for plotting candle charts.
+Install a fuck ton of libs. 
 
---> To save the plotted candlestick graph as image, install kaleido using
+We gotta preprocess the training data by using min max scaler or something.
 
-	conda install -c conda-forge python-kaleido
-   
-    and install orca using
+Also add a block chain for users somehow.
 
-	 conda install -c plotly plotly-orca==1.2.1 psutil requests
