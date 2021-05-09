@@ -4,7 +4,6 @@ import os
 
 ticker = 'AAPL'
 path_string = 'stock_market_data-%s' % ticker
-extension = '.csv'
 
 df = pd.read_csv(path_string + '.csv')
 
